@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="maficheprofilcss.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Ma fiche profil</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 
 <body>
@@ -210,7 +210,30 @@
 
         <div class="grid-item" id="tech">
             <h1>Compétences Techniques</h1>
-            <table>
+            <p id="text">My Skills</p>
+            <canvas id="canvas"></canvas>
+            <script>
+                var ctx = document.getElementById("canvas").getContext('2d');
+                
+                var myChart = new Chart(ctx,{
+                type:'bar',
+                data:{
+                    labels:['HTML','CSS','Javascript procédural', 'Javascript avancé','PHP', 'SQL', 'React', 'Angular', 'Node'], // nom des colonnes
+                    datasets:[{
+                        label:'Web Development', 
+                        data:[60,50,34,45,12,20,12,54,5], // réglages niveau des skills ! virgule à la fin crochet
+                    backgroundColor : ["red","blue","yellow","white","green", "purple", "pink", "brown","cyan"], // order couleur data
+                    bordereWidth:1,
+                    borderColor:"#fff",
+                    hoverBorderWidth:3,
+                    padding:50
+                    }],
+                }
+                });
+
+               
+            </script>
+            <!--<table>
                 <tr>
                     <th>HTML</th>
                     <td><progress value=50 max=180></progress></td>
@@ -248,11 +271,12 @@
                     <td><progress value=180 max=180></progress></td>
                 </tr>
 
-            </table>
+            </table>-->
         </div>
 
         <div class="grid-item" id="hum">
             <h1>Compétences Humaines</h1>
+
         </div>
 
         <div class="grid-item" id="real">
@@ -269,42 +293,40 @@
 
 
     <script>
-
+/*
         function tata(){
-    
-            // On récupéré les objets HTML (DOM) ex: span, div
-
-    // tata va stocker un tableau contenant les éléfdfments de la classe spBar
+        // On récupéré les objets HTML (DOM) ex: span, div
+        // tata va stocker un tableau contenant les éléments de la classe spBar
         let tata = document.getElementsByClassName("spBar")
            tata[0].value = 2 // test de donné une valeur 
 
-           //On boucle le tableau tata, a chaque itération il execute le code entre {}
-            for(let i=0; i<tata.length; i++){
-                // tata étant un tableau, on se sert de la variable i définit a l'entrée de la boucle 
-                // pour affecter chaque 'ligne' du tableau
+        //On boucle le tableau tata, a chaque itération il execute le code entre {}
+        for(let i=0; i<tata.length; i++){
+            // tata étant un tableau, on se sert de la variable i définit a l'entrée de la boucle 
+            // pour affecter chaque 'ligne' du tableau
 
-                // Si tu veux accédé au premier élémént du tableau : tata[0], le 2eme : tata[1]
+            // Si tu veux accédé au premier élémént du tableau : tata[0], le 2eme : tata[1]
 
-                // .addEventListener("click", function()){ CODE } ::
-                // Il attend un evenement de type click sur l'élement
+            // .addEventListener("click", function()){ CODE } ::
+            // Il attend un evenement de type click sur l'élement
 
-                tata[i].addEventListener("click", function(){
+            tata[i].addEventListener("click", function(){
 
-                    // Création d'une variable, créant un element de type button
-                    let button = document.createElement("button")
-                    button.innerHTML = "MOINS"
+                // Création d'une variable, créant un element de type button
+                let button = document.createElement("button")
+                button.innerHTML = "MOINS"
 
-                    // Je récupére mon spBar pour lui foutre le boutton, grace a insertAdjacent
-                    
-                    tata[i].insertAdjacentElement("afterend", button)
-                })
+                // Je récupére mon spBar pour lui foutre le boutton, grace a insertAdjacent
+                
+                tata[i].insertAdjacentElement("afterend", button)
+            })
 
-                console.log(tata[i].value)
+            console.log(tata[i].value)
             }
         }
 
 
-        tata()
+        tata()*/
     </script>
 </body>
 
