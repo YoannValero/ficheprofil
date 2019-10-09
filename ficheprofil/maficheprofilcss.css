@@ -1,13 +1,13 @@
 body {
     color:white;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 /* Présentation profil */
 .menu {
     height:300px;
     width:100%;
-    background-image: url("https://www.afip-formations.com/inc/templates/afip/dbi/crop/medium/photo-gnuy.jpg");
+    background-image: url(mama.jpg);
     background-size: cover;
     border-radius:30px;   
 }
@@ -15,11 +15,23 @@ body {
     color:white;
     border-radius:30px; 
     font-size:90px;    
-    background-color: rgba(8, 38, 94, 0.705); 
+    background-color: rgba(75, 170, 46, 0.788); 
     padding-left:50px;
 }
 h1 {
     font-size:45px;
+    
+}
+h1:hover {
+    background-color:rgb(16, 68, 0);
+    transition: 0.4s ease-in;
+    cursor: all-scroll;
+}
+#titre {
+    text-decoration: none;
+    border:none;
+    background:none;
+    
 }
 #photo { 
     float:right;
@@ -33,26 +45,39 @@ h1 {
 .grid-container {
     display:grid;
     grid-template-areas:    "a a a a"
+                            "f f f f"
+                            "r r r r"
                             "b b b b "
                             "c c c c "
+                            "s s s s"
                             "d d e e";
     align-items:center;
     padding:20px; 
+    
 }
 .grid-item {
     border:1px solid black;
     height:auto;
     margin:10px; 
     padding:10px; 
-    background-color:rgb(0, 19, 61);
+    background-color:rgba(32, 110, 8);
     border-radius:20px;
     text-align: center;
+    
 
 }
 #comp {
     grid-area: a;
+    
+}
+
+#compmetier {
+    grid-area: f;
 }
 #tech {
+    grid-area :r;
+}
+#technique {
     grid-area: b ;
 }
 #hum{
@@ -63,6 +88,9 @@ h1 {
 }
 #agend {
     grid-area:e;
+}
+#humaine {
+    grid-area: s;
 }
 
 table {
@@ -93,8 +121,8 @@ progress {
 
 
 h2 {
-    background-color: rgba(32, 35, 85, 0.733);
-    padding:5px;  
+    background-color: rgba(1, 37, 0, 0.733);
+    padding:20px;
 }
 
 .nBtn {
@@ -145,6 +173,7 @@ h2 {
 #canvas {
     background-color :rgba(0, 0, 0, 0.534);
     border-radius:20px;
+    
 }
 
 
