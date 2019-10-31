@@ -1,0 +1,293 @@
+html, body {
+    height:100%;
+    padding:0 auto;
+    margin:0 auto;
+    scroll-behavior: smooth;  
+    
+}
+/* body {
+    overflow:hidden;
+} */
+body > section {
+    min-height:100%;  
+    margin:0 auto;
+    padding:0 auto;   
+}
+a {
+    margin:0 auto;
+    padding: 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+}
+#accueil {
+    background-image: url(Circuit_imprime_-_fond_ecran_1920x1080.jpg)  ;
+    background-size: cover;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    margin:0 auto;
+}
+@font-face {
+    font-family: Mountecarlo;
+    src : url(Mountecarlo.otf);
+}
+#down {
+    color:white;
+    position:absolute;
+    
+    bottom:2vh;
+    animation: downmove linear 0.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes downmove {
+    0% {transform:translateY(-2vh);}
+    50% {transform:translateY(-4vh);}
+    100% {transform:translateY(-2vh);}
+}
+#accueil > h1 {
+    font-size: 10vh;
+    background: -webkit-linear-gradient(rgb(0, 26, 255),
+                                        rgb(10, 94, 163),
+                                        rgb(0, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;     
+    margin:0 auto;
+    padding:0 auto;    
+    text-align:center;
+}
+h2 {
+    font-size:5vh;
+    background: -webkit-linear-gradient(rgb(255, 255, 255),
+                                        rgb(176, 187, 196),
+                                        rgb(76, 119, 119));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:0 auto;
+    margin-top:1vh;
+    text-align:center;
+    }
+#accbtn {
+    /* text-decoration:none; */
+    cursor: pointer;
+    /* background:none;
+    border:none; */
+    background:linear-gradient(rgb(0, 26, 255),
+                                rgb(10, 94, 163),
+                                rgb(0, 255, 255));
+    height: 10vh;
+    /* background-color:red; */
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:5vh;
+    border-radius:20px;
+    box-shadow: 1vh 1vh 1vh rgba(14, 129, 158, 0.829);
+    /* border: 2px solid black;    */
+}
+#accbtn:hover {
+    background: blue;
+    transition: 1s ease;
+}
+p {
+    margin:0 auto;
+    color:black;
+    font-size:2vh;
+}
+
+#menu {  
+/* Filtre background  */
+    height:100%;
+    min-height:100%;
+    margin:0 auto;
+    /* background: linear-gradient(
+        rgba(12, 193, 199, 0), 
+        rgba(20, 170, 163, 0.397),
+        rgba(30, 148, 156, 0.295),
+        rgba(19, 145, 167, 0.123)
+        ),url(Circuit_imprime_-_fond_ecran_1920x1080.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        z-index:99; */
+       }
+article {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    position:absolute;
+    width:50%;
+    height:50%;
+    z-index:1;
+}
+#compmetier, #contact{
+    background: linear-gradient(
+        rgb(0, 0, 0), 
+        rgb(4, 0, 43),
+        rgb(0, 1, 75),
+        rgb(23, 0, 153)
+        )
+}
+#comptech, #soft {
+    background: linear-gradient(
+        rgb(7, 113, 161), 
+        rgb(7, 151, 127),
+        rgb(5, 68, 119),
+        rgb(13, 99, 114)
+        )
+}
+#compmetier {
+    top:100%;
+    left:0;
+}
+#comptech{
+    top:100%;
+    left:50%;
+}
+#soft {
+    top:150%;
+    left:0;
+}
+#contact {
+    top:150%;
+    left:50%;
+}
+#compmetier a, #comptech a, #soft a, #contact a  {
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+.navmenu:hover {
+    cursor: pointer;
+    border: 60px solid cyan initial;
+}
+.navmenu:hover h1 {
+    background:none;
+    color:rgb(53, 226, 0);
+    transform: translateY(-3vh);
+    transition: 0.7s ease;
+    
+}
+.navmenu:hover i {
+    transform: translateY(3vh);
+    color:rgb(53, 226, 0);
+    transition: 0.5s  ease-in-out;
+}
+i {
+    color: rgb(28, 0, 155);
+    font-size:9vh;
+}
+#menu h1 {
+    font-size: 6vh;
+    background: -webkit-linear-gradient(rgb(231, 233, 255),
+                                        rgb(171, 217, 255),
+                                        rgb(115, 255, 255));
+    
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent; 
+}
+
+#metier {
+    height:100%;
+    background: linear-gradient(
+        rgb(0, 0, 0), 
+        rgb(4, 0, 43),
+        rgb(0, 1, 75),
+        rgb(23, 0, 153)
+        )
+}
+
+#tech {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    background: linear-gradient(
+        rgb(0, 0, 0), 
+        rgb(4, 0, 43),
+        rgb(0, 1, 75),
+        rgb(23, 0, 153)
+        )
+}
+#skills {
+    display:flex;
+    height:100%;
+    background: linear-gradient(
+        rgb(5, 150, 218), 
+        rgb(7, 151, 127),
+        rgb(5, 68, 119),
+        rgb(4, 61, 71)
+        )
+}
+#skills h1 {
+    position:absolute;
+    font-size:5vh;
+    background-color: blue;;
+    
+}
+img {
+    position:absolute;
+    width:35%;
+    height:13%;
+    background-color:rgba(0, 238, 255, 0.212);
+    top:0%;
+    border-radius:5px;
+}
+/* CANVAS */
+#myChart { 
+    height:100%;
+    width:100%;
+    min-height:350px;
+}
+#incMyChart{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:50%;
+}
+th{
+    font-size:4vh;
+    text-align:left;
+}
+
+td {
+    font-size:2vh;
+}
+
+/* .pBtn, .nBtn {
+    position:relative;
+    z-index:2;
+    color:red;
+    font-size:20px;
+}
+
+progress {
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    position:relative;
+    z-index:1;
+     */
+
+@media screen and (max-width:600px) {
+    #skills {
+        flex-direction:column;
+        height:auto;
+    }
+    #incMyChart {
+        width:100%;
+    }
+    #accueil > h1 {
+        font-size:5vh;
+    }
+    #menu h1 {
+        font-size: 4vh;
+        text-align:center;
+    }
+    h2 {
+        font-size:3vh;
+    }
+
+}

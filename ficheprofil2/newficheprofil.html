@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="profil.css">
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/af7af77969.js"></script>
+    <title>Fiche profil</title>
+</head>
+<body>
+
+    <section id='accueil'>
+            <img src='scm_logo_md.png'></img>
+        <h1> VALERO Yoann </h1>
+        <h2> Développeur Web et Web mobile</h2>
+          <a href="#menu"><button id=accbtn> Découvrir</button></a>
+            
+        <h1>Ma Fiche Profil</h1>
+        <a href='#menu'> <i class="fas fa-angle-double-down" id="down"></i> </a>
+
+    </section>
+
+    
+    <section id='menu'> 
+                
+            <article class='navmenu' id='compmetier'>
+                <a href='#metier'>
+                <i class="fas fa-certificate"></i>
+                <h1>Compétences Métiers </h1>
+                </a>
+            </article>
+            <article class='navmenu' id='comptech'> 
+                <a href='#tech'>
+                <i class="fab fa-html5"></i>
+                <h1>Compétences Techniques</h1>
+                </a>
+                </article>
+            <article class='navmenu'  id='soft'>
+                <a href='#skills'>
+                <i class="fas fa-users"></i>
+                <h1>Soft Skills</h1>
+                </a>
+            </article>
+            <article class='navmenu'  id='contact'> 
+                <i class="fas fa-envelope"></i>
+               <h1> Contact</h1>
+            </article> 
+    </section>
+
+    <section id='metier'>
+    </section>
+
+    <section id='tech'>
+      <canvas id='canvas'></canvas>
+    </section>  
+
+
+    <section id='skills'>
+      
+        <div id='myChart'></div>
+        <!-- <h1>Soft Skills</h1> -->
+        <div id='incMyChart'>
+          <h2>Mes compétences</h2>
+            <p> Cette liste regroupe toutes les qualités nécessaires à un bon développeur</p>
+      
+          <table>
+            <th>Fiable</th>
+              <tr>
+                <td> Loyal, Impliqué, perfectionniste, tenace...</td>
+              </tr>
+            <th>Organisé</th>
+              <tr>
+                <td> Minutieux, rigoureux, soigneux ...</td>
+              </tr>
+            <th>Disponible</th>
+              <tr>
+                <td>Accessible, calme, souriant, ouvert d'esprit</td>
+              </tr>
+            <th>Réflexif</th>
+              <tr>
+                <td>Analytique, réfléchi, intelligent, ingénieux</td>
+              </tr>
+            <th>Créatif</th>
+              <tr>
+                <td>Imaginatif, inventif, original, inattendu, désorganisé</td>
+              </tr>
+            <th>LeaderShip</th>
+              <tr>
+                <td>Charismatique, organisateur, fédérateur, diplomate, ambitieux</td>
+              </tr>
+            <th>Curieux</th>
+              <tr>
+                <td>Trouve des solutions, soif de connaissances</td>
+              </tr>
+            <th>Indépendant</th>
+              <tr>
+                <td>Observateur, discret, silencieux</td>
+              </tr>
+             
+              
+          </table>
+
+        </div>
+        
+    </section>
+    
+    
+    <script type="text/javascript" src="script.js"></script> 
+</body>
+</html>
