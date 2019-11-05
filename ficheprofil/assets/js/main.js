@@ -334,35 +334,166 @@
 
 })(jQuery);
 
+// CANVAS COMPETENCES TECHNIQUES 
 
-// CANVAS COMPETENCES TECHNIQUES
-var ctx = document.getElementById("canvass").getContext('2d');
+var ctx = document.getElementById('can').getContext('2d');
+
+Chart.defaults.global.title,
+Chart.defaults.global.tooltips,
+Chart.defaults.global.legend.fontFamily = 'Permanent Marker, cursive'
+
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['HTML','CSS','JS procédural', 'JS avancé','PHP', 'SQL', 'React', 'Angular', 'Node'],
+        datasets: [{
+            label: 'Niveau utilisation des Technologies de Développement Web',
+            data: [60,	50,	20,	1,	15,	15,	1,	1,	1],
+            backgroundColor: [
+
+                'rgba(29, 112, 162, 0.7)',
+                'rgba(108,58,68,0.7)',
+                'rgba(244,215,77,0.7)',
+                'rgba(37,19,81,0.7)',
+                'rgba(222,186,111,0.7)',
+                'rgba(130,48,56,0.7)',
+                'rgba(209,96,20,0.7)',
+                'rgba(141,170,157,0.7)',
+                'rgba(228,149,158,0.7)'
+                
+           ],
+            borderColor: [
+
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)',
+                'rgba(229, 75, 75, 0.5)'
+            ],
+            borderWidth: 1
+        }
+    ]
+    },
+options: {
+        legend: {
+            display: false,
+            position: 'bottom',
+            labels: {
+                fontColor: "#fff",
+                fontSize: 14,
+                fontFamily: 'Nunito, sans-serif'
+            }
+        },
+        title: {
+            display: true,
+            text: 'Niveau utilisation des Technologies de Développement Web',
+            fontColor: "#fff",
+            fontSize: 20,
+            fontFamily: 'Nunito, sans-serif'
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    zeroLineColor: 'rgba(0, 0, 0, 1)',
+                    display: true,
+                    fontFamily: 'Nunito, sans-serif',
+                    fontColor: "rgba(255, 255, 255, 0.5))",
+					max: 100,
+					fontSize:12
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    display: true,
+                    fontFamily: 'Nunito, sans-serif',
+                    fontColor: "rgba(255, 255, 255, 0.5))",
+					max: 100,
+					fontSize:12
+					
+                }
+            }]
+
+
+        }
+    }
+});
+
+// CANVAS COMPETENCES TECHNIQUES QUI MARCHE PAAAS
+// var ctx = document.getElementById("canvass").getContext('2d');
   
-Chart.defaults.global.tooltips
 
-var myChart = new Chart(ctx,{
-type:'horizontalBar',
-data:{
-    labels:['HTML','CSS','Javascript procédural', 'Javascript avancé','PHP', 'SQL', 'React', 'Angular', 'Node'], // nom des colonnes
-    datasets:[{
-        label:'Web Development', 
-		data:[50,40,20,1,10,10,1,1,1], // réglages niveau des skills ! virgule à la fin crochet
+// Chart.defaults.global.title,
+// Chart.defaults.global.tooltips
+
+// var myChart = new Chart(ctx,{
+// type:'bar',
+// data:{
+// 		labels:['HTML','CSS','Javascript procédural', 'Javascript avancé','PHP', 'SQL', 'React', 'Angular', 'Node'], // nom des colonnes
+// 		datasets:[{
+// 			label:'Web Development', 
+// 			data:[50,40,20,1,10,10,1,1,1], // réglages niveau des skills ! virgule à la fin crochet
+			
+// 		backgroundColor : ["#1D70A2",
+// 							"blue",
+// 							"yellow",
+// 							"white",
+// 							"green",
+// 							"purple", "pink", "brown","cyan"], // order couleur data
+// 		bordereWidth:1,
+// 		borderColor:"#fff",
+// 		hoverBorderWidth:3,
+// 		padding:50
 		
-	backgroundColor : ["#1D70A2",
-						"blue",
-						"yellow",
-						"white",
-						"green",
-						"purple", "pink", "brown","cyan"], // order couleur data
-    bordereWidth:1,
-    borderColor:"#fff",
-    hoverBorderWidth:3,
-	padding:50,
+		
+// 		}],
+// 		options: {
+// 			legend: {
+// 				display: false,
+// 				position: 'bottom',
+// 				labels: {
+// 					fontColor: "red",
+// 					fontSize: 14,
+// 					fontFamily: 'Nunito, sans-serif'
+// 				}
+// 			},
+// 			title: {
+// 				display: true,
+// 				text: 'Niveau utilisation des Technologies de Développement Web',
+// 				fontColor: "#fff",
+// 				fontSize: 16,
+// 				fontFamily: 'Nunito, sans-serif'
+// 			},
+// 			scales: {
+// 				yAxes: [{
+// 					ticks: {
+// 						beginAtZero: true,
+// 						zeroLineColor: 'rgba(255, 0, 0, 1)',
+// 						display: true,
+// 						fontFamily: 'Nunito, sans-serif',
+// 						fontColor: "rgba(0, 0, 0, 0.5)",
+// 						max: 100
+// 					}
+// 				}],
+// 				xAxes: [{
+// 					ticks: {
+// 						display: true,
+// 						fontFamily: 'Nunito, sans-serif',
+// 						fontColor: "rgba(0, 0, 0, 0.5)",
+// 						max: 100
+// 					}
+// 				}]
 	
 	
-    }],
-}
-})
+// 			}
+// 		}
+// 	}	
+// });
 
 
 
