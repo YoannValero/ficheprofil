@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	scroll-behavior: smooth;
 }
 
 ol, ul {
@@ -3951,20 +3952,92 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-
+#artcont {
+	cursor:pointer;
+}
 .comp {
 	width:20em;
 }
 progress {
-	width:5em;
+	width:6em;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	
+}
+progress[value="1"]::-webkit-progress-value {
+	background: -webkit-linear-gradient(0deg,rgb(255, 51, 0),
+											 rgb(248, 100, 31)
+											 );
+}
+progress[value="2"]::-webkit-progress-value {
+	background:-webkit-linear-gradient(0deg,rgb(255, 136, 0),
+											rgb(201, 171, 2),
+											rgb(137, 245, 13),
+											rgb(93, 245, 5)
+											);										  
+}
+progress[value="3"]::-webkit-progress-value {
+	background: -webkit-linear-gradient(0deg,rgb(208, 255, 0),
+											 rgb(128, 224, 2),
+											 rgb(142, 253, 15),
+											 rgb(66, 179, 0),
+											 rgb(14, 165, 0),
+											 rgb(29, 126, 0));	
+}
+progress::-webkit-progress-bar {
+	border-radius: 10px; 
+	background-color:rgb(255, 255, 255);
+}
+ progress::-webkit-progress-value {
+	border-radius: 10px;
+	
+}
+.resp {
+	display:none;
 }
 
 #myChart {
 	height:100%;
 	width:100%;
-	min-height:350px;
-
+	min-height:550px; 
   }
+
+
+@media screen and (max-width: 950px) {
+	#metier > th, tr, td {
+		display:flex;
+		flex-direction:column;
+	}
+
+	progress {
+		width:100%;
+		
+	}
+	.resp {
+		display: block;
+	}
+	.colth {
+		display:none;
+	}
+	td {
+		font-size: 1.5em;
+	}
+	.comp {
+		font-size:2em;
+	}	
+}
+
+@media screen and (max-width: 670px) {
+	progress {
+		width:100%;
+	}
+	td {
+		font-size:1em;
+	}
+	.comp {
+		font-size:1.25em;
+	}
+}
+
+
+

@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Soft Skills</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>  -->
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>HOME</strong> <span>Fiche profil</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="compmet.html">Compétences métiers</a></li>
+							<li><a href="comptec.html">Compétences techniques</a></li>
+							<li><a href="soft.html">Soft skills</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Soft Skills</h1>
+									</header>
+									
+                                 
+                                
+                                <div id='myChart'></div> 
+                                <script>
+var myConfig = {
+    type : 'radar',
+    plot : {
+      aspect : 'area',
+      animation: {
+        effect:3,
+        sequence:1,
+        speed:700
+      }
+    },
+    scaleV : {
+      visible : false,
+    
+    },
+    scaleK : {
+      values : '0:7:1',
+      labels : ['Fiable','Organisé','Disponible','Réflexif', 'Créatif', 'LeaderShip', 'Curieux', 'Indépendant' ],
+      item : {
+        fontColor : '#607D8B',
+        backgroundColor : "white",
+        borderColor : "#aeaeae",
+        borderWidth : 1,
+        padding : '5 10',
+        borderRadius : 10
+        
+      },
+      refLine : {
+        lineColor : '#c10000'
+      },
+      tick : {
+        lineColor : '#59869c',
+        lineWidth : 2,
+        lineStyle : 'dotted',
+        size : 20
+      },
+      guide : {
+        lineColor : "#607D8B",
+        lineStyle : 'solid',
+        alpha : 0.3,
+        backgroundColor : "#c5c5c5 #718eb4"
+      }
+    },
+    series : 
+      [{values : [4, 4, 3, 4, 3, 3,2,3],
+        text:'farm'
+      },
+    ]
+  };
+  
+  
+  zingchart.render({ 
+      id : 'myChart', 
+      data : myConfig, 
+      height: '100%', 
+      width: '100%' 
+  });
+                                
+                                </script>
+                                <!-- <canvas id="radar-chart" width="800" height="450"></canvas> 
+                                <script>
+                                let data={};
+        data.html=2108;
+        data.js=1479;
+        data.cpp=2275;
+		data.php=600;
+		
+new Chart(document.getElementById("radar-chart"),
+ { type: 'radar', 
+ data: { 
+	 labels: ["Fiable", "Organisé", "Disponible", "Réflexif","Créatif", "LeaderShip", "Curieux", ""], 
+	 datasets: [ { 
+		 label: "Experience", 
+		 backgroundColor: "rgba(0,0,0,0.2)",
+		 borderColor: "rgba(0,0,0,0.5)", 
+		 pointBackgroundColor: ["salmon","khaki","lightblue","plum","lightgreen"],
+		 data: [data.html,data.js,data.cpp,data.php,453] } ] }, 
+		 options: { 
+			 legend: { 
+				 display: false }, 
+				 title: { 
+					 display: true, 
+					 text: 'My Experience Points' } } });
+                                
+                                </script> -->
+                                
+								
+								
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Nom / Prénom</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">yoann.valero7@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Téléphone</h3>
+										<span>06 19 61 74 59</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Addresse</h3>
+										<span>10 rue du Baron d'Este<br />
+										BILLERE 64 140<br />
+										France</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+	</body>
+</html>
