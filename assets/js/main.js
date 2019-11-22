@@ -343,7 +343,7 @@ Chart.defaults.global.tooltips,
 Chart.defaults.global.legend.fontFamily = 'Permanent Marker, cursive'
 
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
         labels: ['HTML','CSS','JS procédural', 'JS avancé','PHP', 'SQL', 'React', 'Angular', 'Node'],
         datasets: [{
