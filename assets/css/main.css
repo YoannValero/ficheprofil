@@ -2443,13 +2443,13 @@ input, select, textarea {
 		width: 100%;
 	}
 
-		table tbody tr {
+		table tr {
 			border: solid 1px rgba(212, 212, 255, 0.1);
 			border-left: 0;
 			border-right: 0;
 		}
 
-			table tbody tr:nth-child(2n + 1) {
+			table  tr:nth-child(2n + 1) {
 				background-color: rgba(212, 212, 255, 0.035);
 			}
 
@@ -2477,17 +2477,17 @@ input, select, textarea {
 			border-collapse: separate;
 		}
 
-			table.alt tbody tr td {
+			table.alt  tr td {
 				border: solid 1px rgba(212, 212, 255, 0.1);
 				border-left-width: 0;
 				border-top-width: 0;
 			}
 
-				table.alt tbody tr td:first-child {
+				table.alt  tr td:first-child {
 					border-left-width: 1px;
 				}
 
-			table.alt tbody tr:first-child td {
+			table.alt tr:first-child td {
 				border-top-width: 1px;
 			}
 
@@ -3956,7 +3956,7 @@ input, select, textarea {
 	cursor:pointer;
 }
 .comp {
-	width:20em;
+	width:20vw;
 }
 progress {
 	width:6em;
@@ -4024,6 +4024,7 @@ progress::-webkit-progress-bar {
 	}
 	.comp {
 		font-size:2em;
+		width:100%;
 	}	
 }
 

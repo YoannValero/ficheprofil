@@ -11,7 +11,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<!-- <script src="https://cdn.zingchart.com/zingchart.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 	<link rel="stylesheet" href="assets/css/noscript.css" />
 
@@ -73,108 +72,10 @@
 						<h2>Front End</h2>
 					</header>
 					<div id='metier'>
-						<table class="compFront">
-							<h2>1. Développer la partie front-end d'une application web ou web mobile en intégrant les
-								recommandations de sécurité</h2>
-							<tr>
-								<td></td>
-								<th class='colth' scope='col'>Comprendre</th>
-								<th class='colth' scope='col'>Duppliquer </th>
-								<th class='colth' scope='col'>Analyser </th>
-								<th class='colth' scope='col'>Evaluer</th>
-								<th class='colth' scope='col'>Concevoir</th>
-								<th class='colth' scope='col'>Inventer</th>
-
-							</tr>
-
-							<tr>
-
-								<th scope="row" class='comp'>Maquetter une Application</th>
-								<td><span class='resp'>Comprendre</span><progress class="spBar" value=3
-										max=3></progress>
-
-									<!--
-												<button class="pBtn" onclick="precStep('spBar')">-
-												</button>
-												<button class="nBtn"onclick="nextStep('spBar')">+
-												</button>
-											-->
-								</td>
-								<td><span class='resp'>Duppliquer</span><progress class="spBar" value='2' max='3'
-										step='1'></progress></td>
-								<td><span class='resp'>Analyser</span><progress class="spBar" value=1 max=3></progress>
-								</td>
-								<td><span class='resp'>Evaluer</span><progress class="spBar" value=1 max=3></progress>
-								</td>
-								<td><span class='resp'>Concevoir</span><progress class="spBar" value=0 max=3></progress>
-								</td>
-								<td><span class='resp'>Inventer</span><progress class="spBar" value=0 max=3></progress>
-								</td>
-
-
-								<!--Comprendre
-											<td><progress value=30 max=30></progress></td>
-											Duppliquer
-											<td><progress value=20 max=30></progress></td>
-											<Analyser
-											<td><progress value=10 max=30></progress></td>
-											Evaluer
-											<td><progress value=10 max=30></progress></td>
-											Concevoir
-											<td><progress value=10 max=30></progress></td>
-											Inventer-->
-							</tr>
-							<tr>
-								<th scope='row' class='comp'>Réaliser une interface utilisateur web statique et
-									adaptable</th>
-								<td><span class='resp'>Comprendre</span><progress value=1 max=3></progress></td>
-								<!--Comprendre-->
-								<td><span class='resp'>Duppliquer</span><progress value=1 max=3></progress></td>
-								<!--Duppliquer-->
-								<td><span class='resp'>Analyser</span><progress value=2 max=3></progress></td>
-								<!--Analyser-->
-								<td><span class='resp'>Evaluer</span><progress value=1 max=3></progress></td>
-								<!--Evaluer-->
-								<td><span class='resp'>Concevoir</span><progress value=0 max=3></progress></td>
-								<!--Concevoir-->
-								<td><span class='resp'>Innover</span><progress value=0 max=3></progress></td>
-								<!--Inventer-->
-
-							</tr>
-							<tr>
-								<th scope='row' class='comp'>Développer une interface utilisateur web dynamique</th>
-								<td><span class='resp'>Comprendre</span><progress value=1 max=3></progress></th>
-								<!--Comprendre-->
-								<td><span class='resp'>Duppliquer</span><progress value=1 max=3></progress></td>
-								<!--Duppliquer-->
-								<td><span class='resp'>Analyser</span><progress value=1 max=3></progress></td>
-								<!--Analyser-->
-								<td><span class='resp'>Evaluer</span><progress value=1 max=3></progress></td>
-								<!--Evaluer-->
-								<td><span class='resp'>Concevoir</span><progress value=0 max=3></progress></td>
-								<!--Concevoir-->
-								<td><span class='resp'>Innover</span><progress value=0 max=3></progress></td>
-								<!--Inventer-->
-
-							</tr>
-							<tr>
-								<th scope='row' class='comp'>Réaliser une interface utilisateur avec une solution de
-									gestion de contenu ou e-commerce</th>
-
-								<td><span class='resp'>Comprendre</span><progress value=1 max=3></progress></td>
-								<!--Comprendre-->
-								<td><span class='resp'>Duppliquer</span><progress value=1 max=3></progress></td>
-								<!--Duppliquer-->
-								<td><span class='resp'>Analyser</span><progress value=1 max=3></progress></td>
-								<!--Analyser-->
-								<td><span class='resp'>Evaluer</span><progress value=1 max=3></progress></td>
-								<!--Evaluer-->
-								<td><span class='resp'>Concevoir</span><progress value=0 max=3></progress></td>
-								<!--Concevoir-->
-								<td><span class='resp'>Innover</span><progress value=0 max=3></progress></td>
-								<!--Inventer-->
-							</tr>
-							<tr>
+						<h2>1. Développer la partie front-end d'une application web ou web mobile en intégrant les
+							recommandations de sécurité</h2>
+						<table class="compFront" id='frontTable' >
+							
 						</table>
 					</div>
 
@@ -189,81 +90,8 @@
 					<h2>2. Développer la partie back-end d'une application web ou web mobile en intégrant les
 						recommandations de
 						sécurité</h2>
-					<table>
-						<tr>
-							<td></td>
-							<th class='colth' scope='col'>Comprendre</th>
-							<th class='colth' scope='col'>Duppliquer </th>
-							<th class='colth' scope='col'>Analyser </th>
-							<th class='colth' scope='col'>Evaluer</th>
-							<th class='colth' scope='col'>Concevoir</th>
-							<th class='colth' scope='col'>Inventer</th>
-
-						</tr>
-						<tr>
-							<th scope='row' class='comp'>Créer une base de données</th>
-							<td><span class='resp'>Comprendre</span><progress value=1 max=3></progress></td>
-							<!--Comprendre-->
-							<td><span class='resp'>Duppliquer</span><progress value=1 max=3></progress></td>
-							<!--Duppliquer-->
-							<td><span class='resp'>Analyser</span><progress value=1 max=3></progress></td>
-							<!--Analyser-->
-							<td><span class='resp'>Evaluer</span><progress value=1 max=3></progress></td>
-							<!--Evaluer-->
-							<td><span class='resp'>Concevoir</span><progress value=0 max=3></progress></td>
-							<!--Concevoir-->
-							<td><span class='resp'>Inventer</span><progress value=0 max=3></progress></td>
-							<!--Inventer-->
-
-						</tr>
-						<tr>
-							<th scope='row' class='comp'>Développer les composants d'accès aux données</th>
-							<td><span class='resp'>Comprendre</span><progress value=1 max=3></progress></td>
-							<!--Comprendre-->
-							<td><span class='resp'>Duppliquer</span><progress value=1 max=3></progress></td>
-							<!--Duppliquer-->
-							<td><span class='resp'>Analyser</span><progress value=1 max=3></progress></td>
-							<!--Analyser-->
-							<td><span class='resp'>Evaluer</span><progress value=1 max=3></progress></td>
-							<!--Evaluer-->
-							<td><span class='resp'>Concevoir</span><progress value=0 max=3></progress></td>
-							<!--Concevoir-->
-							<td><span class='resp'>Inventer</span><progress value=0 max=3></progress></td>
-							<!--Inventer-->
-						</tr>
-						<tr>
-							<th scope='row' class='comp'>Développer la partie back-end d'une application web ou web mobile</th>
-							<td><span class='resp'>Comprendre</span><progress value=1 max=3></progress></td>
-							<!--Comprendre-->
-							<td><span class='resp'>Duppliquer</span><progress value=1 max=3></progress></td>
-							<!--Duppliquer-->
-							<td><span class='resp'>Analyser</span><progress value=1 max=3></progress></td>
-							<!--Analyser-->
-							<td><span class='resp'>Evaluer</span><progress value=1 max=3></progress></td>
-							<!--Evaluer-->
-							<td><span class='resp'>Concevoir</span><progress value=0 max=3></progress></td>
-							<!--Concevoir-->
-							<td><span class='resp'>Inventer</span><progress value=0 max=3></progress></td>
-							<!--Inventer-->
-						</tr>
-						<tr>
-							<th scope='row' class='comp'>Elaborer et mettre en œuvre des composants dans une application de gestion
-								de contenu ou
-								e-commerce</th>
-							<td><span class='resp'>Comprendre</span><progress value=1 max=3></progress></td>
-							<!--Comprendre-->
-							<td><span class='resp'>Duppliquer</span><progress value=1 max=3></progress></td>
-							<!--Duppliquer-->
-							<td><span class='resp'>Analyser</span><progress value=1 max=3></progress></td>
-							<!--Analyser-->
-							<td><span class='resp'>Evaluer</span><progress value=1 max=3></progress></td>
-							<!--Evaluer-->
-							<td><span class='resp'>Concevoir</span><progress value=0 max=3></progress></td>
-							<!--Concevoir-->
-							<td><span class='resp'>Inventer</span><progress value=0 max=3></progress></td>
-							<!--Inventer-->
-						</tr>
-
+					<table id='backTable'>
+						
 					</table>
 				</div>
 			</section>
@@ -352,6 +180,8 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/compmet.js"></script>
+
 
 </body>
 
